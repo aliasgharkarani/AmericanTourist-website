@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<title>American Tourister - HOME</title>
+<script>
+var name;
+var email;
+var subj;
+var sms;
+
+function login()
+{
+
+
+name=frm1.name.value;
+email=frm1.email.value;
+subj=frm1.subject.value;
+sms=frm1.message.value;
+
+var regname =/^([A-Za-z]{3,9})$/ 
+
+if (name==0)
+{
+   document.getElementById('platform1').innerHTML="Please type your name";	
+}
+
+else if (regname.test(name)==false) 
+{
+  document.getElementById('platform1').innerHTML="Name should only contain A-Z,a-z"; 	
+	
+}
+
+else if (regname.test(name)==true)
+{
+ document.getElementById('platform1').innerHTML="";	
+}
+
+var regemail =/^([A-Za-z0-9-\_\.]{0,})+\@([a-z]{0,})+\.([a-z]{0,})$/
+
+if (email==0)
+{
+	 document.getElementById('platform2').innerHTML="Type your email";		
+}
+
+else if (regemail.test(email)==false)
+{
+	 document.getElementById('platform2').innerHTML="Please check your email";		
+}
+else if (regemail.test(email)==true)
+{
+	 document.getElementById('platform2').innerHTML="";	
+}
+
+
+if (subj==0)
+{
+	 document.getElementById('platform3').innerHTML="Please Type Subject";		
+}
+
+else
+{
+	 document.getElementById('platform3').innerHTML="";		
+}
+
+if (sms==0)
+{
+	 document.getElementById('platform4').innerHTML="Please type your message";		
+}
+
+else
+{
+	 document.getElementById('platform4').innerHTML="";		
+}
+
+}
+
+
+function clean()
+{
+	
+}
+</script>
+</head>
+
+<body>
+<div class="pdiv">
+<header><a href="index.html">
+<img src="Pictures/ATLOGO.png  "  class="logo">
+
+</a>
+
+</header>
+<nav>
+<ul>
+<li><a href="index.html"> Home    </a></li>
+<li class="dropdown">
+<a href="Brands_page.html" class="dropbtn"> Brands    </a>
+<div class="dropdown-content">
+<a href="ADIDAS.html" > ADIDAS   </a>
+<a href="NIKE.html"> NIKE   </a>
+<a href="GUCCHI.html"> GUCCHI   </a>
+<a href="American_Tourister_brand.html"> AMERICAN TOURISTER   </a>
+
+
+</div>
+</li>
+<li><a href="SERVICES_PAGE.html"> Services </a> </li>
+<li><a href="About_us.html"> About us    </a></li>
+<li><a href="contact_us.html"> Contact Us    </a></li>
+
+</ul>
+</nav>
+<section>
+
+<div class="hlatestupdates" >
+<p>Home > Contact us  </p>
+<div class="Cdragmofo">
+<div class="Cformdiv" >
+<form name="frm1" id="frmalign">
+
+<input type="text" placeholder="Name" name="name" autofocus required id="frmnalign"> 
+<p id="platform1">  </p>
+<input type="text" name="email"placeholder="Email" autofocus required id="frmealign"> 
+<p id="platform2">   </p>
+
+
+<input type="text" placeholder="Subject" name="subject" autofocus required id="frmsalign"> 
+<p id="platform3">   </p>
+
+<input type="text" placeholder="Message" name="message" autofocus required id="frmmalign"> 
+<p id="platform4">  </p>
+<input type="button" value="submit" name="submit" id="frmbalign" onClick="login()">
+<input type="reset" value="reset" name="reset" id="frmbralign" onClick="clean()" >
+
+
+
+
+
+</form>
+
+</div> 
+<div class="Caddress_contant">
+<div class="C_SOMECLASSYASSMOFO">
+<div class="csomefuckingimg">
+<img src="Pictures/footer icons/blue-location-icon-26-2.png" height="80px" > 
+
+</div>
+<div class="Csomefuckinglocation">
+<p>   American Tourister , 
+Zamzama , 7th Commercial Lane,DHA Phase 5, Karachi, Sindh, Pakistan.</p>
+</div>
+
+</div>
+
+<div class="C_SOMECLASSYASSMOFO">
+<div class="csomefuckingimg">
+<img src="Pictures/footer icons/icons2-2.png"  height="80px" > 
+
+</div>
+<div class="Csomefuckinglocation">
+<p>   info@americantourister.com
+support@americantourister.com </p>
+</div>
+
+</div>
+
+<div class="C_SOMECLASSYASSMOFO">
+<div class="csomefuckingimg">
+<img src="Pictures/footer icons/phone-icon-hi-2.png"  height="80px" > 
+
+</div>
+<div class="Csomefuckinglocation">
+<p> +92-213-6687860  <br> +92-213-8895564 <br> +92-213-5462348</p>
+</div>
+
+</div>
+</div>
+
+<div class="Blatestupdates" >
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBbVqwRYKrbbwdWUMip1JK909iTxCvU1N4'></script><div style='overflow:hidden;height:706px;width:100%;'><div id='gmap_canvas' style='height:706px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/'>http://maps-generator.com</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e1a9087e7b879871f3045531ddc1ad10247d7000'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(24.8182427,67.0402057),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(24.8182427,67.0402057)});infowindow = new google.maps.InfoWindow({content:'<strong>American Tourister ,Zamzama , 7th Commercial Lane, DHA Phase 5, Karachi, Sindh, Pakistan, karachi</strong><br>Zamzama , 7th Commercial Lane, DHA Phase 5, Karachi, Sindh, Pakistan, karachi<br>75500 Karachi<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+</div>
+
+
+</section>
+<footer>
+<div class="hfindus">
+<p> Find Us </p>
+<div class="hfuimg">
+<a href=""><img src="Pictures/Facebook official logo.png" class="hdindusimg"></a>
+<a href=""><img src="Pictures/Twitter offical logo.png" class="hdindusimg"></a>
+<a href=""><img src="Pictures/instagram official  logo.png" class="hdindusimg"></a>
+</div>
+</div>
+<div class="hfooterw">
+<div class="hfwb">
+<h1 class="white"> MEET AMERICANS</h1>
+<a href="SERVICES_PAGE.html"><p> SERVICES</p></a>
+<a href="About_us.html"><p> ABOUT US</p></a>
+</div>
+
+<div class="hfwb">
+<h1 class="white"> We're Here for you</h1>
+<a href="contact_us.html"><p> CONTACT US</p> </a>
+<p style="color:#A41E34"> COntact US</p> 
+</div>
+<div class="box3">
+
+<table  >
+<tr>
+<td class="fu">+92</td>
+<td> <img src="Pictures/footer icons/location.png"></td>
+<td>  American Tourister , Zamzama , 7th Commercial Lane, DHA Phase 5,<br> Karachi, Sindh, Pakistan.</td>
+
+</tr>
+
+
+<tr>
+<td class="fu"> +92</td>
+<td> <img src="Pictures/footer icons/email.png"></td>
+<td> info@americantourist.com<br>
+support@americantourist.com<br>
+clientservice@americantourist.com</td>
+
+
+<tr>
+<td class="fu"> +92</td>
+<td> <img src="Pictures/footer icons/phone.png"></td>
+<td> +92-213-6687860 <br> +92-213-8895564 <br> +92-213-5462348</td>
+
+</tr>
+
+
+</table>
+<!--<div class="line">
+<img src="Pictures/footer icons/email.png">
+<p> American Tourister , Zamzama , 7th Commercial Lane, DHA Phase 5,<br> Karachi, Sindh, Pakistan.</p>
+</div>
+<div class="line">
+<img src="Pictures/footer icons/email.png">
+<p>  info@americantourist.com<br>
+support@americantourist.com<br>
+clientservice@americantourist.com</p>
+</div>
+<div class="line">
+<img src="Pictures/footer icons/email.png">
+<p>+92-213-6687860 <br> +92-213-8895564 <br> +92-213-5462348<</p>
+</div>-->
+
+</div>
+
+<!--
+<div class="hfwb3">
+<div class="hlocation">
+<img src="Pictures/footer icons/location.png">
+<p>  American Tourister , Zamzama , 7th Commercial Lane, DHA Phase 5, Karachi, Sindh,<br> Pakistan.</p>
+</div>
+<div class="hlocation">
+<img src="Pictures/footer icons/email.png" >
+<p>  info@americantourist.com
+support@americantourist.com
+clientservice@americantourist.com </p>
+</div>
+<div class="hlocation">
+<img src="Pictures/footer icons/phone.png"  >
+<p> +92-213-6687860 <br> +92-213-8895564 <br> +92-213-5462348</p>
+</div>
+</div>
+-->
+</div>
+
+<div class="hfootersl">
+<p> americantourist.com © 2016</p>
+
+</div>
+</footer>
+</div>
+</body>
+</html>
